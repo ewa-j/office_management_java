@@ -10,4 +10,15 @@ public class Room {
     available = true;
   }
 
+  public boolean availability() {
+    return available;
+  }
+
+  public void enterRoom() {
+    available = false;
+  }
+
+  public void leaveRoom() {
+    available = true;
+  }
 }
