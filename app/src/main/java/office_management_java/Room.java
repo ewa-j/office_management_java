@@ -14,8 +14,12 @@ public class Room {
     return available;
   }
 
-  public void enterRoom() {
-    available = false;
+  public void enterRoom() throws Exception {
+    if (available) {
+      available = false;
+    } else {
+      throw new Exception("Room not available.");
+    }
   }
 
   public void leaveRoom() {
