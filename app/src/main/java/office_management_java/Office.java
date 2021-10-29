@@ -6,8 +6,8 @@ import java.util.stream.Collectors;
 
 public class Office {
 
-  ArrayList<Room> rooms;
-  Room room;
+  public Room room;
+  public ArrayList<Room> rooms;
 
   public Office() {
     rooms = new ArrayList<Room>();
@@ -27,5 +27,9 @@ public class Office {
     Predicate<Room> byAvailability = room -> room.available == true;
     var availableRooms = rooms.stream().filter(byAvailability).collect(Collectors.toList());
     return (ArrayList<Room>) availableRooms;
+  }
+
+  public static void main(String[] args) {
+
   }
 }

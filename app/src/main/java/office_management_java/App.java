@@ -8,7 +8,15 @@ public class App {
         return "Hello World!";
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println(new App().getGreeting());
+
+        Office office = new Office();
+        Room blueRoom = new Room("blue");
+        System.out.println(office.add(blueRoom));
+        System.out.println(office.listRooms());
+        System.out.println(office.listAvailableRooms());
+        System.out.println(blueRoom.enterRoom());
+        System.out.println(office.listAvailableRooms());
     }
 }
