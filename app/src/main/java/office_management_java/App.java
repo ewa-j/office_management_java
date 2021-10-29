@@ -5,7 +5,7 @@ package office_management_java;
 
 public class App {
     public String getGreeting() {
-        return "Hello World!";
+        return "Welcome to the office!";
     }
 
     public static void main(String[] args) throws Exception {
@@ -18,5 +18,6 @@ public class App {
         System.out.println(office.listAvailableRooms());
         System.out.println(blueRoom.enterRoom());
         System.out.println(office.listAvailableRooms());
+        System.out.println(blueRoom.enterRoom());
     }
 }
