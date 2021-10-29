@@ -17,4 +17,8 @@ public class Office {
     rooms.add(room);
     return room;
   }
+
+  public ArrayList<Room> listRooms() {
+    return rooms;
+  }
 }
